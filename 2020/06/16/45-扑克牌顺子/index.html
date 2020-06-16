@@ -20,17 +20,17 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="输入一个递增排序的数组和一个数字S，在数组中查找两个数，使得他们的和正好是S，如果有多对数字的和等于S，输出两个数的乘积最小的。  两头开始找匹配，乘积最小必定为最先找到的。也就是说依然是左右夹逼法！！！只需要2个指针1.left开头，right指向结尾。2.如果和小于sum，说明太小了，left右移寻找更大的数。3.如果和大于sum，说明太大了，right左移寻找更小的数。4.和相等，把left">
+  <meta name="description" content="LL今天心情特别好,因为他去买了一副扑克牌,发现里面居然有2个大王,2个小王(一副牌原本是54张^_^)…他随机从中抽出了5张牌,想测测自己的手气,看看能不能抽到顺子,如果抽到的话,他决定去买体育彩票,嘿嘿！！“红心A,黑桃3,小王,大王,方片5”,“Oh My God!”不是顺子…..LL不高兴了,他想了想,决定大\小王可以看成任何数字,并且A看作1,J为11,Q为12,K为13。上面的5张牌就">
 <meta property="og:type" content="article">
-<meta property="og:title" content="42.和为S的两个数字">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;06&#x2F;16&#x2F;42-%E5%92%8C%E4%B8%BAS%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97&#x2F;index.html">
+<meta property="og:title" content="45.扑克牌顺子">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;06&#x2F;16&#x2F;45-%E6%89%91%E5%85%8B%E7%89%8C%E9%A1%BA%E5%AD%90&#x2F;index.html">
 <meta property="og:site_name" content="绝知此事要躬行">
-<meta property="og:description" content="输入一个递增排序的数组和一个数字S，在数组中查找两个数，使得他们的和正好是S，如果有多对数字的和等于S，输出两个数的乘积最小的。  两头开始找匹配，乘积最小必定为最先找到的。也就是说依然是左右夹逼法！！！只需要2个指针1.left开头，right指向结尾。2.如果和小于sum，说明太小了，left右移寻找更大的数。3.如果和大于sum，说明太大了，right左移寻找更小的数。4.和相等，把left">
+<meta property="og:description" content="LL今天心情特别好,因为他去买了一副扑克牌,发现里面居然有2个大王,2个小王(一副牌原本是54张^_^)…他随机从中抽出了5张牌,想测测自己的手气,看看能不能抽到顺子,如果抽到的话,他决定去买体育彩票,嘿嘿！！“红心A,黑桃3,小王,大王,方片5”,“Oh My God!”不是顺子…..LL不高兴了,他想了想,决定大\小王可以看成任何数字,并且A看作1,J为11,Q为12,K为13。上面的5张牌就">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-06-16T14:24:20.008Z">
+<meta property="og:updated_time" content="2020-06-16T15:33:09.051Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/06/16/42-%E5%92%8C%E4%B8%BAS%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97/">
+<link rel="canonical" href="http://yoursite.com/2020/06/16/45-%E6%89%91%E5%85%8B%E7%89%8C%E9%A1%BA%E5%AD%90/">
 
 
 <script id="page-configurations">
@@ -43,7 +43,7 @@
   };
 </script>
 
-  <title>42.和为S的两个数字 | 绝知此事要躬行</title>
+  <title>45.扑克牌顺子 | 绝知此事要躬行</title>
   
 
 
@@ -158,7 +158,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/16/42-%E5%92%8C%E4%B8%BAS%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/16/45-%E6%89%91%E5%85%8B%E7%89%8C%E9%A1%BA%E5%AD%90/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -171,7 +171,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          42.和为S的两个数字
+          45.扑克牌顺子
         </h1>
 
         <div class="post-meta">
@@ -182,7 +182,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-06-16 22:17:42 / 修改时间：22:24:20" itemprop="dateCreated datePublished" datetime="2020-06-16T22:17:42+08:00">2020-06-16</time>
+              <time title="创建时间：2020-06-16 23:27:14 / 修改时间：23:33:09" itemprop="dateCreated datePublished" datetime="2020-06-16T23:27:14+08:00">2020-06-16</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -205,10 +205,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>输入一个递增排序的数组和一个数字S，在数组中查找两个数，使得他们的和正好是S，<br>如果有多对数字的和等于S，输出两个数的乘积最小的。</p>
+        <p>LL今天心情特别好,因为他去买了一副扑克牌,发现里面居然有2个大王,2个小王(一副牌原本是54张^_^)…他随机从中抽出了5张牌,想测测自己的手气,看看能不能抽到顺子,如果抽到的话,他决定去买体育彩票,嘿嘿！！“红心A,黑桃3,小王,大王,方片5”,“Oh My God!”不是顺子…..LL不高兴了,他想了想,决定大\小王可以看成任何数字,并且A看作1,J为11,Q为12,K为13。上面的5张牌就可以变成“1,2,3,4,5”(大小王分别看作2和4),“So Lucky!”。LL决定去买体育彩票啦。<br>现在,要求你使用这幅牌模拟上面的过程,然后告诉我们LL的运气如何， 如果牌能组成顺子就输出true，否则就输出false。为了方便起见,你可以认为大小王是0。</p>
 <hr>
-<p>两头开始找匹配，乘积最小必定为最先找到的。<br>也就是说依然是左右夹逼法！！！只需要2个指针<br>1.left开头，right指向结尾。<br>2.如果和小于sum，说明太小了，left右移寻找更大的数。<br>3.如果和大于sum，说明太大了，right左移寻找更小的数。<br>4.和相等，把left和right的数返回<br>Note:left-&gt;,&lt;-right。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">FindNumbersWithSum</span><span class="params">(self, array, tsum)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        <span class="comment"># write code here</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> array:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">return</span> []</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        left = <span class="number">0</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        right = len(array) - <span class="number">1</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">while</span> left &lt; right:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">if</span> array[left] + array[right] == tsum:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">                <span class="keyword">return</span> [array[left], array[right]]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">elif</span> array[left] + array[right] &lt; tsum:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">                left += <span class="number">1</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">else</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">                right -= <span class="number">1</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">return</span> []</span></pre></td></tr></table></figure>
+<p>max 记录 最大值<br>min 记录  最小值<br>min ,max 都不记0<br>满足条件  1.max - min &lt;= 5;<br>        2.除0外没有重复的数字(牌);<br>        3.数组长度为5。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">IsContinuous</span><span class="params">(self, numbers)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        <span class="comment"># write code here</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> numbers:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        num_count = [<span class="number">0</span>] * <span class="number">14</span>  <span class="comment"># 记录每张牌出现的次数，索引刚好为牌面，对应的值为这张牌出现的次数。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        num_count[<span class="number">0</span>] = <span class="number">-5</span>  <span class="comment"># 王有四个，设为-5，后面最多为0（其实为-1）。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        max = <span class="number">-1</span>  <span class="comment"># 最小牌为0。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">        min = <span class="number">14</span>  <span class="comment"># 最大牌为13。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">        length = len(numbers)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(length):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">            num_count[numbers[i]] += <span class="number">1</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">if</span> numbers[i] == <span class="number">0</span>: <span class="comment"># 牌面为0，跳出本次循环</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">                <span class="keyword">continue</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">if</span> num_count[numbers[i]] &gt; <span class="number">1</span>: <span class="comment"># 除0以外的牌的次数大于1，就返回False。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">if</span> numbers[i] &gt; max: <span class="comment"># 最多四张牌为0，故max不可能为0。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">                max = numbers[i]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">if</span> numbers[i] &lt; min: <span class="comment"># 最多四张牌为0，故min不可能为0。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">                min = numbers[i]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">if</span> (max - min) &lt; <span class="number">5</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">else</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span></pre></td></tr></table></figure>
 
     </div>
 
@@ -224,12 +224,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/16/41-%E5%92%8C%E4%B8%BAS%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%AD%A3%E6%95%B0%E5%BA%8F%E5%88%97/" rel="prev" title="41.和为S的连续正数序列">
-      <i class="fa fa-chevron-left"></i> 41.和为S的连续正数序列
+    <a href="/2020/06/16/42-%E5%92%8C%E4%B8%BAS%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97/" rel="prev" title="42.和为S的两个数字">
+      <i class="fa fa-chevron-left"></i> 42.和为S的两个数字
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/06/16/45-%E6%89%91%E5%85%8B%E7%89%8C%E9%A1%BA%E5%AD%90/" rel="next" title="45.扑克牌顺子">
-      45.扑克牌顺子 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/06/16/46-%E5%AD%A9%E5%AD%90%E4%BB%AC%E7%9A%84%E6%B8%B8%E6%88%8F-%E5%9C%86%E5%9C%88%E4%B8%AD%E6%9C%80%E5%90%8E%E5%89%A9%E4%B8%8B%E7%9A%84%E6%95%B0/" rel="next" title="46.孩子们的游戏(圆圈中最后剩下的数)">
+      46.孩子们的游戏(圆圈中最后剩下的数) <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
