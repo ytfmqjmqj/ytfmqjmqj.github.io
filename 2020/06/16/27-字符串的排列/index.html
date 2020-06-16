@@ -20,19 +20,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="加入图片的测试加粗图片重建二叉树">
+  <meta name="description" content="输入一个字符串,按字典序打印出该字符串中字符的所有排列。例如输入字符串abc,则打印出由字符a,b,c所能排列出来的所有字符串abc,acb,bac,bca,cab和cba。 输入描述:输入一个字符串,长度不超过9(可能有字符重复),字符只包括大小写字母。 全排列算法：从第一个元素开始，对每个元素，分别与它后面不相同的数交换。NOTE：每个元素必须与自身交换。 1# -*- coding:utf-">
 <meta property="og:type" content="article">
-<meta property="og:title" content="twosum">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;06&#x2F;14&#x2F;twosum&#x2F;index.html">
+<meta property="og:title" content="27.字符串的排列">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;06&#x2F;16&#x2F;27-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97&#x2F;index.html">
 <meta property="og:site_name" content="绝知此事要躬行">
-<meta property="og:description" content="加入图片的测试加粗图片重建二叉树">
+<meta property="og:description" content="输入一个字符串,按字典序打印出该字符串中字符的所有排列。例如输入字符串abc,则打印出由字符a,b,c所能排列出来的所有字符串abc,acb,bac,bca,cab和cba。 输入描述:输入一个字符串,长度不超过9(可能有字符重复),字符只包括大小写字母。 全排列算法：从第一个元素开始，对每个元素，分别与它后面不相同的数交换。NOTE：每个元素必须与自身交换。 1# -*- coding:utf-">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ytfmqjmqj&#x2F;PictureBed&#x2F;master&#x2F;LeetCode&#x2F;22.%E4%BB%8E%E4%B8%8A%E5%BE%80%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91.jpeg">
-<meta property="og:updated_time" content="2020-06-15T05:27:58.673Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ytfmqjmqj&#x2F;PictureBed&#x2F;master&#x2F;target-offer&#x2F;27.%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%973.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ytfmqjmqj&#x2F;PictureBed&#x2F;master&#x2F;target-offer&#x2F;27.%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97.png">
+<meta property="og:updated_time" content="2020-06-16T12:21:02.652Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ytfmqjmqj&#x2F;PictureBed&#x2F;master&#x2F;LeetCode&#x2F;22.%E4%BB%8E%E4%B8%8A%E5%BE%80%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91.jpeg">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ytfmqjmqj&#x2F;PictureBed&#x2F;master&#x2F;target-offer&#x2F;27.%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%973.jpg">
 
-<link rel="canonical" href="http://yoursite.com/2020/06/14/twosum/">
+<link rel="canonical" href="http://yoursite.com/2020/06/16/27-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97/">
 
 
 <script id="page-configurations">
@@ -45,7 +46,7 @@
   };
 </script>
 
-  <title>twosum | 绝知此事要躬行</title>
+  <title>27.字符串的排列 | 绝知此事要躬行</title>
   
 
 
@@ -160,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/14/twosum/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/16/27-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -173,7 +174,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          twosum
+          27.字符串的排列
         </h1>
 
         <div class="post-meta">
@@ -182,23 +183,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-06-14 21:03:50" itemprop="dateCreated datePublished" datetime="2020-06-14T21:03:50+08:00">2020-06-14</time>
+              <time title="创建时间：2020-06-16 17:43:25 / 修改时间：20:21:02" itemprop="dateCreated datePublished" datetime="2020-06-16T17:43:25+08:00">2020-06-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-15 13:27:58" itemprop="dateModified" datetime="2020-06-15T13:27:58+08:00">2020-06-15</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+                  <a href="/categories/target-offer/" itemprop="url" rel="index"><span itemprop="name">target-offer</span></a>
                 </span>
             </span>
 
@@ -213,7 +208,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="加入图片的测试"><a href="#加入图片的测试" class="headerlink" title="加入图片的测试"></a>加入图片的测试</h1><p><strong>加粗图片</strong><br>重建二叉树<br><img src="https://raw.githubusercontent.com/ytfmqjmqj/PictureBed/master/LeetCode/22.%E4%BB%8E%E4%B8%8A%E5%BE%80%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91.jpeg" alt="picgo"></p>
+        <p>输入一个字符串,按字典序打印出该字符串中字符的所有排列。例如输入字符串abc,则打印出由字符a,b,c所能排列出来的所有字符串abc,acb,bac,bca,cab和cba。</p>
+<p>输入描述:<br>输入一个字符串,长度不超过9(可能有字符重复),字符只包括大小写字母。</p>
+<p>全排列算法：从第一个元素开始，对每个元素，分别与它后面不相同的数交换。<br>NOTE：每个元素必须与自身交换。<br><img src="https://raw.githubusercontent.com/ytfmqjmqj/PictureBed/master/target-offer/27.%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%973.jpg" alt=""><br><img src="https://raw.githubusercontent.com/ytfmqjmqj/PictureBed/master/target-offer/27.%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97.png" alt=""></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">Permutation</span><span class="params">(self, ss)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        <span class="comment"># write code here</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        res = []</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">        <span class="comment"># 全排列函数。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">permutations</span><span class="params">(arr,position,end)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">if</span> position == end - <span class="number">1</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">                temp = <span class="string">''</span>.join(arr)  <span class="comment"># 这句是为了把数组转成字符串存在列表res中。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">                res.append(temp)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">for</span> index <span class="keyword">in</span> range(position, end):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">                <span class="comment"># if是去掉全排列中的重复项，比如"aa",会输出["aa","aa"],本应输出["aa"]。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">                <span class="keyword">if</span> index == position <span class="keyword">or</span> arr[index] != arr[position]:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">                    arr[index], arr[position] = arr[position], arr[index] <span class="comment"># 交换</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">                    permutations(arr, position + <span class="number">1</span>, end)<span class="comment"># 递归。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">                    arr[index], arr[position] = arr[position], arr[index] <span class="comment"># 恢复。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">        <span class="comment"># 主体部分。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> ss:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">return</span> []</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">        s = [i <span class="keyword">for</span> i <span class="keyword">in</span> ss]  <span class="comment"># 先把字符串转为数组操作，否则不能交换字符串中的值。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">        permutations(s,<span class="number">0</span>,len(s))  <span class="comment"># 调用自定义全排列函数。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">return</span> sorted(res), s <span class="comment"># 其实返回res就行，但牛客网测试结果是按字典序判断的。</span></span></pre></td></tr></table></figure>
+
+
+
 
     </div>
 
@@ -229,12 +230,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/12/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" rel="prev" title="我的第一篇博客文章">
-      <i class="fa fa-chevron-left"></i> 我的第一篇博客文章
+    <a href="/2020/06/16/40-%E6%95%B0%E7%BB%84%E4%B8%AD%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/" rel="prev" title="40.数组中只出现一次的数字">
+      <i class="fa fa-chevron-left"></i> 40.数组中只出现一次的数字
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/06/16/25-%E5%A4%8D%E6%9D%82%E9%93%BE%E8%A1%A8%E7%9A%84%E5%A4%8D%E5%88%B6/" rel="next" title="25.复杂链表的复制">
-      25.复杂链表的复制 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/06/16/39-%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91/" rel="next" title="39.平衡二叉树">
+      39.平衡二叉树 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -294,7 +295,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#加入图片的测试"><span class="nav-number">1.</span> <span class="nav-text">加入图片的测试</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
