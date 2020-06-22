@@ -20,17 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="写一个函数，求两个整数之和，要求在函数体内不得使用+、-、*、&#x2F;四则运算符号。  思路：位运算两个数异或：相当于每一位相加，而不考虑进位；两个数相与，并左移一位：相当于求得进位；将上述两步的结果相加。 Add1:在Python内部对整数的处理分为普通整数和长整数，普通整数长度为机器位长，通常都是32位，超过这个范围的整数就自动当长整数处理，而长整数的范围几乎完全没限制。当-1 + -6 通过whi">
+  <meta name="description" content="DFS用栈来实现 1graph &#x3D; &amp;#123;2    &quot;A&quot;: [&quot;B&quot;, &quot;C&quot;],3    &quot;B&quot;: [&quot;A&quot;, &quot;C&quot;, &quot;D&quot;],4    &quot;C&quot;: [&quot;A&quot;, &quot;B&quot;, &quot;D&quot;, &quot;E&quot;],5    &quot;D&quot;: [&quot;B&quot;, &quot;C&quot;, &quot;E&quot;, &quot;F&quot;],6    &quot;E&quot;: [&quot;C&quot;, &quot;D&quot;],7    &quot;F&quot;: [&quot;D&quot;]8&amp;#125;910def DFS(graph, s):11">
 <meta property="og:type" content="article">
-<meta property="og:title" content="48.不用加减乘除做加法">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;06&#x2F;17&#x2F;48-%E4%B8%8D%E7%94%A8%E5%8A%A0%E5%87%8F%E4%B9%98%E9%99%A4%E5%81%9A%E5%8A%A0%E6%B3%95&#x2F;index.html">
+<meta property="og:title" content="DFS">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;06&#x2F;22&#x2F;DFS&#x2F;index.html">
 <meta property="og:site_name" content="绝知此事要躬行">
-<meta property="og:description" content="写一个函数，求两个整数之和，要求在函数体内不得使用+、-、*、&#x2F;四则运算符号。  思路：位运算两个数异或：相当于每一位相加，而不考虑进位；两个数相与，并左移一位：相当于求得进位；将上述两步的结果相加。 Add1:在Python内部对整数的处理分为普通整数和长整数，普通整数长度为机器位长，通常都是32位，超过这个范围的整数就自动当长整数处理，而长整数的范围几乎完全没限制。当-1 + -6 通过whi">
+<meta property="og:description" content="DFS用栈来实现 1graph &#x3D; &amp;#123;2    &quot;A&quot;: [&quot;B&quot;, &quot;C&quot;],3    &quot;B&quot;: [&quot;A&quot;, &quot;C&quot;, &quot;D&quot;],4    &quot;C&quot;: [&quot;A&quot;, &quot;B&quot;, &quot;D&quot;, &quot;E&quot;],5    &quot;D&quot;: [&quot;B&quot;, &quot;C&quot;, &quot;E&quot;, &quot;F&quot;],6    &quot;E&quot;: [&quot;C&quot;, &quot;D&quot;],7    &quot;F&quot;: [&quot;D&quot;]8&amp;#125;910def DFS(graph, s):11">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-06-16T16:36:06.575Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ytfmqjmqj&#x2F;PictureBed&#x2F;master&#x2F;classical-algorithms&#x2F;%E5%8E%9F%E5%A7%8B%E5%9B%BE.png">
+<meta property="og:updated_time" content="2020-06-22T15:13:15.970Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ytfmqjmqj&#x2F;PictureBed&#x2F;master&#x2F;classical-algorithms&#x2F;%E5%8E%9F%E5%A7%8B%E5%9B%BE.png">
 
-<link rel="canonical" href="http://yoursite.com/2020/06/17/48-%E4%B8%8D%E7%94%A8%E5%8A%A0%E5%87%8F%E4%B9%98%E9%99%A4%E5%81%9A%E5%8A%A0%E6%B3%95/">
+<link rel="canonical" href="http://yoursite.com/2020/06/22/DFS/">
 
 
 <script id="page-configurations">
@@ -43,7 +45,7 @@
   };
 </script>
 
-  <title>48.不用加减乘除做加法 | 绝知此事要躬行</title>
+  <title>DFS | 绝知此事要躬行</title>
   
 
 
@@ -158,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/17/48-%E4%B8%8D%E7%94%A8%E5%8A%A0%E5%87%8F%E4%B9%98%E9%99%A4%E5%81%9A%E5%8A%A0%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/22/DFS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -171,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          48.不用加减乘除做加法
+          DFS
         </h1>
 
         <div class="post-meta">
@@ -182,7 +184,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-06-17 00:25:48 / 修改时间：00:36:06" itemprop="dateCreated datePublished" datetime="2020-06-17T00:25:48+08:00">2020-06-17</time>
+              <time title="创建时间：2020-06-22 22:58:14 / 修改时间：23:13:15" itemprop="dateCreated datePublished" datetime="2020-06-22T22:58:14+08:00">2020-06-22</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -190,7 +192,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/target-offer/" itemprop="url" rel="index"><span itemprop="name">target-offer</span></a>
+                  <a href="/categories/classical-algorithms/" itemprop="url" rel="index"><span itemprop="name">classical algorithms</span></a>
                 </span>
             </span>
 
@@ -205,12 +207,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>写一个函数，求两个整数之和，要求在函数体内不得使用+、-、*、/四则运算符号。</p>
-<hr>
-<p>思路：位运算<br>两个数异或：相当于每一位相加，而不考虑进位；<br>两个数相与，并左移一位：相当于求得进位；<br>将上述两步的结果相加。</p>
-<p>Add1:<br>在Python内部对整数的处理分为普通整数和长整数，普通整数长度为机器位长，通常都是32位，超过这个范围的整数就自动当<br>长整数处理，而长整数的范围几乎完全没限制。当-1 + -6 通过while中的位运算操作之后，输出的计算结果是4294967289。<br>经过<del>(num1^0xffffffff)这个操作会被作为负数解释输出，</del>运算符除了求反，还是二进制的补运算符，运算过后的二进制数字按照补码解释。就可以输出负数了。也可以使用num1 - 4294967295(0xffffffff)，也可以得到负数结果。负数是以补码形式存储的，python的取反运算结果是补码。 前面用 a &amp; 0xFFFFFFFF 相当于无视符号位，直接转为无符号数，也就是说，这个时候解释器已经不认识补码了。后面再用一次取反，重新给强调一下，是补码。</p>
-<p>Add2:<br>a &amp; 0xFFFFFFFF的作用应该是截段a的长度。对于~(num1^0xffffffff)，举一个简单点的例子：<br>-15的原码是10001111，补码是11110001，-15 &amp; 0xff = 11110001(-15的补码参与运算，对于按位与，1变成1，0变成0），而-15 ^ 0xff = 00001110（-15的补码参与运算，对于按位异或，1变成0，0变成1），再对前面的结果按位取反，从而又重新得到-15的补码11110001，相当于两次取反得到-15的原补码。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">Add</span><span class="params">(self, num1, num2)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        <span class="comment"># write code here</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">while</span> num2:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">            result = (num1 ^ num2) &amp; <span class="number">0xffffffff</span>  <span class="comment"># 不进位的各位相加。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">            carry = ((num1 &amp; num2) &lt;&lt; <span class="number">1</span>) &amp; <span class="number">0xffffffff</span>  <span class="comment"># 进位的结果。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">            num1 = result</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">            num2 = carry</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">if</span> num1 &lt;= <span class="number">0x7fffffff</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">            result = num1</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">else</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">            result = ~(num1^<span class="number">0xffffffff</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">return</span> result</span></pre></td></tr></table></figure>
+        <p><strong>DFS用栈来实现</strong><br><img src="https://raw.githubusercontent.com/ytfmqjmqj/PictureBed/master/classical-algorithms/%E5%8E%9F%E5%A7%8B%E5%9B%BE.png" alt=""></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">graph = &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="string">"A"</span>: [<span class="string">"B"</span>, <span class="string">"C"</span>],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="string">"B"</span>: [<span class="string">"A"</span>, <span class="string">"C"</span>, <span class="string">"D"</span>],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="string">"C"</span>: [<span class="string">"A"</span>, <span class="string">"B"</span>, <span class="string">"D"</span>, <span class="string">"E"</span>],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    <span class="string">"D"</span>: [<span class="string">"B"</span>, <span class="string">"C"</span>, <span class="string">"E"</span>, <span class="string">"F"</span>],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    <span class="string">"E"</span>: [<span class="string">"C"</span>, <span class="string">"D"</span>],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="string">"F"</span>: [<span class="string">"D"</span>]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">DFS</span><span class="params">(graph, s)</span>:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    stack = []</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">    stack.append(s)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    seen = set()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">    seen.add(s)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">while</span>(len(stack) &gt; <span class="number">0</span>):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">        vertex = stack.pop() <span class="comment"># 取出一个顶点</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">        nodes = graph[vertex] <span class="comment"># 添加相领顶点</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">for</span> w <span class="keyword">in</span> nodes:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">            <span class="keyword">if</span> w <span class="keyword">not</span> <span class="keyword">in</span> seen:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">                stack.append(w)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">                seen.add(w)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">        print(vertex)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">DFS(graph, <span class="string">'A'</span>)</span></pre></td></tr></table></figure>
 
     </div>
 
@@ -226,13 +224,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/17/47-%E6%B1%821-2-3-n/" rel="prev" title="47.求1+2+3+...+n">
-      <i class="fa fa-chevron-left"></i> 47.求1+2+3+...+n
+    <a href="/2020/06/22/BFS%E4%B8%8Edijkstra/" rel="prev" title="BFS与dijkstra">
+      <i class="fa fa-chevron-left"></i> BFS与dijkstra
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/06/17/50-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/" rel="next" title="50.数组中重复的数字">
-      50.数组中重复的数字 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
